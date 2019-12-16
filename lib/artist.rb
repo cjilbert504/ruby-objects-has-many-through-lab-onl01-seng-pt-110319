@@ -23,4 +23,8 @@ attr_accessor :name
       Song.new(name, self, genre)
     end
 
+    def genres
+
+    end
+
 end
