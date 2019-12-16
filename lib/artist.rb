@@ -25,7 +25,7 @@ attr_accessor :name
 
     def genres
       Song.all.select do |genre|
-        genre.name 
+        song.genre  
       end
     end
 
