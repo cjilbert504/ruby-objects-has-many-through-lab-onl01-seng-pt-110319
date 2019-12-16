@@ -26,6 +26,7 @@ attr_accessor :name
     def genres
       Genre.all.select do |genre|
         genre.artist == self
+      end
     end
 
 end
