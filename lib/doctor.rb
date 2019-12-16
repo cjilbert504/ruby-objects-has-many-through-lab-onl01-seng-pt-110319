@@ -27,5 +27,5 @@ class Doctor
       appt.patient.name
     end
   end
-  
+
 end
