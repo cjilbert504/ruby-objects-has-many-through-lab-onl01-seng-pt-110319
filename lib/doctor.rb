@@ -24,7 +24,7 @@ class Doctor
 
   def patients
     appointments.patient
-    end
+  
   end
 
 end
