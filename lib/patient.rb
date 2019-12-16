@@ -7,7 +7,7 @@ attr_accessor :name
   end
 
   def appointments
-
+    Appointment.all.select {|appt| appt.patient == self}
   end
 
   def new_appointment(date, doctor)
