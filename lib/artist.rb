@@ -18,5 +18,5 @@ attr_accessor :name
       songs.artist == self
     end
   end
-  
+
 end
