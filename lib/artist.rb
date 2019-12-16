@@ -24,8 +24,8 @@ attr_accessor :name
     end
 
     def genres
-      songs.genre
-
+      songs.map do |genre|
+        
     end
 
 end
