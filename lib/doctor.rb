@@ -1,5 +1,6 @@
-require 'pry'
 
+Viewed
+@@ -0,0 +1,27 @@
 class Doctor
 
   attr_accessor :name
@@ -10,21 +11,20 @@ class Doctor
     @@all << self
   end
 
-  def self.all
-    @@all
-  end
-
   def appointments
-    Appointment.all.select  {|appt| appt.doctor == self}
-  end
-
-  def new_appointment(patient, date)
-    Appointment.new(patient, date, self)
+    Appointment.all.select {|appointment| appointment.doctor == self}
   end
 
   def patients
     appointments.map {|appointment| appointment.patient}
   end
 
+  def self.all
+    @@all
+  end
 
-end
+  def new_appointment(patient, date)
+    Appointment.new(patient, date, self)
+  end
+
+end 
